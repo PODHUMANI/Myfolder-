@@ -1,0 +1,32 @@
+# Encryption
+
+def caesar_encryption(plaintext, key):
+    return ciphertext
+
+# decryption
+
+
+def caesar_decryption(ciphertext, key):
+    plaintext = ""
+    for char in ciphertext:
+        # check the char is alphabet
+        if char.isalpha():
+            # if char is uppercase ascii value will be 65 else lowercase means 97
+            ascii_code = ord('A') if char.isupper() else ord('a')
+            # formula to covert ciphertext to plaintext
+            shifted_char = chr(
+                (ord(char) - ascii_code - key) % 26 + ascii_code)
+            plaintext += shifted_char
+        else:
+            plaintext += char
+    return plaintext
+
+
+plaintext = input("Enter the plaintext:")
+key = int(input("Enter the key:"))
+
+ciphertext = caesar_encryption(plaintext, key)
+decrypted_plaintext = caesar_decryption(ciphertext, key)
+
+print("Cipher_text:", ciphertext)
+print("Plain_text:", decrypted_plaintext)
