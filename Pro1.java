@@ -14,6 +14,6 @@ public class pro1{
     }
 
 
-}  System.out.println(second);
+}  System.out.println(" second big number is :"+second);
     }
 }
