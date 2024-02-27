@@ -32,4 +32,8 @@ public class BubbleSortExample {
                 }  
    
         }  
-}  
+} 
+/*Array Before Bubble Sort
+3 60 35 2 45 320 5 
+Array After Bubble Sort
+2 3 5 35 45 60 320*/
