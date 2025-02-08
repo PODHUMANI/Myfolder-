@@ -29,3 +29,24 @@ public static void main(String[] args) {
     }
      
  }
+/*import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of Fibonacci terms: ");
+        int n = s.nextInt();
+
+        int a = 0, b = 1, sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) sum += a;
+            b += a;
+            a = b - a;
+        }
+
+        System.out.println("Sum of Fibonacci numbers at even indexes: " + sum);
+        s.close();
+    }
+}*/
+
